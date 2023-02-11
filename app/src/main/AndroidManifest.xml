@@ -12,14 +12,18 @@
         android:theme="@style/Theme.TutorialProj"
         tools:targetApi="31">
         <activity
-            android:name=".SettingsActivity"
-            android:label="Settings"
+            android:name=".ComposeMessageActivity"
             android:parentActivityName=".MainActivity"
             android:exported="false" />
         <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:label="Settings"
+            android:parentActivityName=".MainActivity" />
+        <activity
             android:name=".MainActivity"
-            android:label="Learn Android"
-            android:exported="true">
+            android:exported="true"
+            android:label="Learn Android">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

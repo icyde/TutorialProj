@@ -60,4 +60,12 @@ public class MainActivity extends AppCompatActivity {
         i.putExtra("COOL", "Hello"); //(key-value pair) -> access value using key
         startActivity(i);
     }
+
+    public void composeMessage( View v){
+        Intent i = new Intent(this, ComposeMessageActivity.class);
+        String name = ((Button) v).getText().toString();
+        i.putExtra("NAME", name);
+        startActivity(i);
+
+    }
 }
